@@ -14,28 +14,31 @@
         integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
     <!--CSS Link-->
     <link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 </head>
 <body>
     <header>
         <!--Navigation Section-->
-            <nav>
-                <img src="./Images/logo-img.svg" alt="Logo Image">
-                <button class="hemburger" id="hemburger">
-                    <i class="fas fa-bars"></i>
-                </button>
-                <ul class="nav-ul" id="nav-ul">
-                    <li><a href="">Home</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Services</a></li>
-                    <li><a href="">Contact Us</a></li>
-                </ul>
-            </nav>
+          <div class="nav-container">
+                <nav>
+                    <img src="./Images/logo-img.svg" alt="Logo Image">
+                    <button class="hemburger" id="hemburger">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <ul class="nav-ul" id="nav-ul">
+                        <li><a href="">Home</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Services</a></li>
+                        <li><a href="">Contact Us</a></li>
+                    </ul>
+                </nav>
+          </div>
     </header>
-    <main class="container">
+    <main>
 
 
 <!--Hero Section-->
-        <section class="section-hero">
+        <section class="section-hero container">
             <div class="hero-copy-container">
                 <h1 class="hero-heading">Full Service</h1>
                 <h2 class="hero-subheading">Social Media Marketing</h2>
@@ -53,7 +56,7 @@
 
 
 <!--About Section-->
-        <section class="section-about">
+        <section class="section-about container">
             <div class="about-copy-container">
                 <h3 class="about-heading">About</h3>
                 <h2 class="about-subheading">Grow Your Business
@@ -71,7 +74,7 @@
 
 
 <!--Services Section-->
-        <section class="section-services">
+        <section class="section-services container">
             <h2 class="services-heading">Services</h2>
             <div class="services-copy-container">
                 <div class="services-facebook social-media">
@@ -121,7 +124,7 @@
 
 
 <!--Pay Section-->
-        <section class="section-pay">
+        <section class="section-pay container">
             <div class="pay-copy-container">
                 <h2 class="pay-subheading">Pay for Qualified Traffic</h2>
                 <p class="pay-copy">Sed tristique lacus at interdum dignissim. Nulla non magna lacinia sem porta imperdiet vitae mollis orci. Aliquam erat
@@ -138,60 +141,64 @@
 
 
 <!--Testimonial Section-->
-        <section class="section-testimonial">
-            <h2 class="testimonial-heading">Testimonial</h2>
-            <p class="testimonial-copy">Cras a erat at diam eleifend semper et et magna. Nulla quis sagittis velit.</p>
-
-            <div class="testimonial-copy-container">
-                <div class="testimonial-box">
-                    <img src="./Images/img-Sonia.png" alt="Female Client Profile">
-                    <h3 class="client-name">Sonia Stewart</h3>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <p class="client-copy">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-                        been
-                        the industry's standard
-                        dummy text ever since the 1500s.</p>
+<section class="section-testimonial container">
+    <h2 class="testimonial-heading">Testimonial</h2>
+    <p class="testimonial-copy">Cras a erat at diam eleifend semper et et magna. Nulla quis sagittis velit.</p>
+    <div class="carousel" data-flickity='{ "wrapAround": true }'>
+        <div class="carousel-cell">
+            <div class="testimonial-box">
+                <img src="./Images/img-Sonia.png" alt="Female Client Profile">
+                <h3 class="client-name">Sonia Stewart</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
                 </div>
-                <div class="testimonial-box">
-                    <img src="./Images/img-john.jpg" alt="Male Client Profile">
-                    <h3 class="client-name">John Tarkpor</h3>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <p class="client-copy">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-                        been
-                        the industry's standard
-                        dummy text ever since the 1500s.</p>
-                </div>
-                <div class="testimonial-box">
-                    <img src="./Images/img-tanya.jpg" alt="Female Client Profile">
-                    <h3 class="client-name">Tanya Sinclair</h3>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="far fa-star"></i>
-                    </div>
-                    <p class="client-copy">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+                <p class="client-copy">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                    been
+                    the industry's standard
                     dummy text ever since the 1500s.</p>
-                </div>
             </div>
-        </section>
-
-
+        </div>
+        <div class="carousel-cell">
+            <div class="testimonial-box">
+                <img src="./Images/img-john.jpg" alt="Male Client Profile">
+                <h3 class="client-name">John Tarkpor</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p class="client-copy">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                    been
+                    the industry's standard
+                    dummy text ever since the 1500s.</p>
+            </div>
+        </div>
+        <div class="carousel-cell">
+            <div class="testimonial-box">
+                <img src="./Images/img-tanya.jpg" alt="Female Client Profile">
+                <h3 class="client-name">Tanya Sinclair</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <p class="client-copy">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                    been the industry's standard
+                    dummy text ever since the 1500s.</p>
+            </div>
+        </div>
+    </div>
+</section>
 <!--Contact Section-->
-        <section class="section-contact">
+        <section class="section-contact container">
             <div class="contact-copy-container">
                 <div class="contact-box form-box">
                     <h2 class="contact-form-heading form-heading">Get in touch</h2>
@@ -230,7 +237,7 @@
 
 
 <!--Informaiton Section-->
-        <section class="info_section ">
+        <section class="info_section">
             <div class="container">
                 <div class="contact_nav">
                     <div class="box">
@@ -295,17 +302,16 @@
 
 <!--Footer Seciton-->
         <section class="footer_section">
-            <div class="container">
-                <p>
-                    &copy; <span id="displayYear">2021</span> | Social Media Agency</a> | Design By
-                    <a  href="https://ajayboro.netlify.app/">Ajay Boro</a>
-                </p>
-            </div>
+            <p>
+                &copy; <span id="displayYear">2021</span> | Social Media Agency</a> |</br> Design By
+                <a href="https://ajayboro.netlify.app/">Ajay Boro</a>
+            </p>
         </section>
     </main>
 
 
     <!--JavaScript Link-->
     <script src="main.js"></script>
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 </body>
 </html>
